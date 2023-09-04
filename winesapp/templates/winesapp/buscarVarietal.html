@@ -1,0 +1,18 @@
+{% extends 'winesapp/index.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<body>
+    <h2> Buscar Varietal </h2>
+    <form action="/buscar2" method="get">
+        {% csrf_token %}
+        
+        <p> Buscar Varietal: <input type="text" name= "buscar" id= "buscar" ></p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+{% endblock contenido %}

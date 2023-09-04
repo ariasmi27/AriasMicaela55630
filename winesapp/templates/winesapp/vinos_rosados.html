@@ -1,11 +1,28 @@
-
 {% extends 'winesapp/index.html' %}
 {% load static  %}
 
 {% block contenido %}
 <section class="page-section bg-dark text-white">
      <div class="container px-4 px-lg-5 text-center">
-         <h2 class="mb-4">Bienvenidos a nuestros Vinos Espumantes !</h2>
+         <h2 class="mb-4">Bienvenidos a nuestros Vinos Rosados !</h2>
+         <table>
+            <tr>
+               <th>ID</th>
+               <th>Varietal</th>
+               <th>Cosecha</th>
+            </tr>
+          
+          {% for c in vinos_tintos %}
+            <tr>
+               <td>{{ c.id }}</td>
+               <td>{{ c.varietal }}</td>
+               <td>{{ c.cosecha }}</td>
+            </tr>
+     
+     
+          
+          {% endfor %}
+          </table>
      </div>
  </section>
 {% endblock contenido %}
