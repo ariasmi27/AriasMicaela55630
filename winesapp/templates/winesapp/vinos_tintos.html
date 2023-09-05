@@ -6,24 +6,25 @@
 <section class="page-section bg-dark text-white">
      <div class="container px-4 px-lg-5 text-center">
          <h2 class="mb-4">Bienvenidos a nuestros Vinos Tintos !</h2>
-         <table>
+   <table class="table table-striped">
+       <thead>
             <tr>
                <th>ID</th>
                <th>Varietal</th>
                <th>Cosecha</th>
             </tr>
+       </thead>
+       <tbody>
           
-          {% for c in vinos_tintos %}
+   {% for c in vinos_tintos %}
             <tr>
                <td>{{ c.id }}</td>
                <td>{{ c.varietal }}</td>
                <td>{{ c.cosecha }}</td>
             </tr>
-     
-     
-          
-          {% endfor %}
-          </table>
+   {% endfor %}
+       </tbody>
+    </table>
      </div>
  </section>
 {% endblock contenido %}

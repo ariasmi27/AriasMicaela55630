@@ -41,3 +41,7 @@ def buscar2(request):
         contexto = { 'vinos_tintos': vinos_tintos }    
         return render(request,"winesapp/vinos_tintos.html", contexto)   
     return HttpResponse ("No se ingreso nada a buscar")          
+
+def vinos_blancos2(request):
+    ctx = {'vinos_blancos': vinos_blancos.objects.all()}
+    return render(request, "winesapp/vinos_blancos.html", ctx)
