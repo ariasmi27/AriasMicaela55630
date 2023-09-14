@@ -2,9 +2,57 @@
 {% load static  %}
 
 {% block contenido %}
-<section class="page-section bg-dark text-white">
+<section class="page-section bg-danger text-white">
      <div class="container px-4 px-lg-5 text-center">
-         <h2 class="mb-4">Bienvenidos a nuestros Vinos Rosados !</h2>
+         <h2 class="mb-4">Nuestros Rosados </h2>
+         <table>
+            <tr>
+                <td width="200"><h2>Varietales  Cosechas </h2></td>
+                <td>
+                    <a
+                    href="#"
+                    class="btn btn-primary btn-sm"
+                    ><i class="fa fa-wine-glass fa-lg" title="New Record"> </i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-striped">
+         <thead>
+             <tr>
+                 <th>ID</th>
+                 <th>Varietal</th>
+                 <th>Cosecha</th>
+                 <th>Acciones</th>
+             </tr>
+         </thead>
+         {% for vinos_rosados in vinos_rosados %}
+         <tr>
+             <td>{{ vinos_rosados.id }}</td>
+             <td>{{ vinos_rosados.varietal }}</td>
+             <td>{{ vinos_rosados.cosecha }}</td>
+             
+             <td>
+                 <a
+                   href="#"
+                   class="btn btn-primary"
+                   style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                   ><i class="fa fa-edit fa-sm" title="Edit Record"></i>
+                 </a>
+                 <a
+                   href="#"
+                   class="btn btn-danger"
+                   style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                   ><i class="fa fa-trash fa-sm" title="Delete Record"></i>
+                 </a>
+               </td>        
+         </tr>
+         {% endfor %}
+         </tbody>
+     </table>
+     
+   
+         
          <table>
             <tr>
                <th>ID</th>
@@ -12,7 +60,7 @@
                <th>Cosecha</th>
             </tr>
           
-          {% for c in vinos_tintos %}
+          {% for c in vinos_rosados %}
             <tr>
                <td>{{ c.id }}</td>
                <td>{{ c.varietal }}</td>
