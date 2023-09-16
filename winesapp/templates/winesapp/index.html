@@ -37,13 +37,13 @@
                         <li class="nav-item"><a class="nav-link" class="navbar-brand" href="{% url 'vinos_rosados' %}"> Rosados </a></li>
                         <li class="nav-item"><a class="nav-link" class="navbar-brand" href="{% url 'vinos_espumantes' %}"> Espumantes </a></li>
             
-                <a class="btn btn-primary" href="#">Logout</a>
-                <p style="color:black">Hola {{user.username}}!</p>
+                <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
+                <p style="color:White">Hola {{user.username}}!</p>
                 
                 {% else %}    
-                <a class="btn btn-success" href="">Registro</a>        
+                <a class="btn btn-success" href="{% url 'registro' %}">Registro</a>        
                 <a class="btn btn-primary" href="{% url 'login' %}">Login</a>
-                 {% endif %}
+                {% endif %}
                                       
                     
                     

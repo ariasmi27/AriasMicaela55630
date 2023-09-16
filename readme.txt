@@ -1,4 +1,6 @@
 Nombre: Micaela Arias 
+Usuario de admin: Micaela
+contraseña: mica654321
 
 Proyecto Final del Curso de Python (Comision 55630)
 
