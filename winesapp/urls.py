@@ -8,6 +8,7 @@ urlpatterns = [
    
    path('vinos_rosados/', vinos_rosados2, name= "vinos_rosados"),
    path('vinos_espumantes/', vinos_espumantes2, name= "vinos_espumantes"),
+   
    path('vinosForm/', vinos_abm, name= "vinosForm"),
    path('buscar_varietal/', buscar_varietal, name= "buscar_varietal"),
    path('buscar2/', buscar2, name= "buscar2"),
