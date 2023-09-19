@@ -21,3 +21,7 @@ Cosechas
 Funcionalidad :
 
 Conocer la cantidad de tipos de uva que se pueden usar para vino y el tipo de vino. Que cada usuario pueda ir agregando los vinos que vayan conociendo y no esten en la app.
+
+ya que no se encuentra mi ABOUT en mi App. 
+No queria deja de presentarme.
+Mi nombre es Micaela Arias tengo 33 años y claramente es mi primer curso de programacion, elegi Python porque me lo recomendaron . Me intereso mucho el curso y creo q es el principio de un camino que recien empieza.
