@@ -36,9 +36,12 @@
                         <li class="nav-item"><a class="nav-link" class="navbar-brand" href="{% url 'vinos_blancos' %}"> Blancos </a></li>
                         <li class="nav-item"><a class="nav-link" class="navbar-brand" href="{% url 'vinos_rosados' %}"> Rosados </a></li>
                         <li class="nav-item"><a class="nav-link" class="navbar-brand" href="{% url 'vinos_espumantes' %}"> Espumantes </a></li>
-            
-                <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
-                <p style="color:White">Hola {{user.username}}!</p>
+                        <a class="btn btn-primary" href="{% url 'editar_perfil' %}">Perfil</a>
+                        <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
+                        <p style="color:White">Hola {{user.username}}!</p>
+                        <div class="text-center">
+                            <img src="{{ request.session.avatar }}" height="40px" weight="40px"/>
+                        </div>
                 
                 {% else %}    
                 <a class="btn btn-success" href="{% url 'registro' %}">Registro</a>        
@@ -62,7 +65,7 @@
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">
                             La historia del vino de Argentina se remonta al período colonial temprano, cuando los conquistadores españoles trajeron las primeras vides a Argentina desde el Viejo Mundo para producir vino para Misa</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Conoce Mas</a>
+                    
                     </div>
                 </div>
             </div>

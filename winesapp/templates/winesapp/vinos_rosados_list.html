@@ -2,33 +2,21 @@
 {% load static  %}
 
 {% block contenido %}
-<section class="page-section bg-success text-white">
-     <div class="container px-4 px-lg-5 text-center">
-         <h2 class="mb-4">Nuestros Espumantes </h2>
-         <table>
-  <tr>
-      <td width="200"><h2>Vinos Blancos</h2></td>
-      <td>
-          <a
-          href=" # "
-          class="btn btn-primary btn-sm"
-          ><i class="fa fa-wine-glass fa-lg" title="New Record"> </i>
-          </a>
-      </td>
-  </tr>
-</table>
+<section class="page-section bg-danger text-white">
+    <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">Nuestros Rosados </h2>
        <table>
           <tr>
-              <td width="200"><h2>Vinos Espumantes</h2></td>
+              <td width="200"><h2>Vinos Rosados</h2></td>
               <td>
                   <a
-                  href="{% url 'create_vino_espumante' %}"
+                  href="{% url 'create_vino_rosado' %}"
                   class="btn btn-primary btn-sm"
                   ><i class="fa fa-wine-glass fa-lg" title="New Record"> </i>
                   </a>
               </td>
           </tr>
-      </table>
+        </table>
         <table class="table table-striped">
          <thead>
              <tr>
@@ -39,21 +27,21 @@
              </tr>
          </thead>
          <tbody>
-         {% for vino_espumante in vino_espumante_list %}
+         {% for rosado in vinos_rosados_list %}
          <tr>
-             <td>{{ vino_espumante.id }}</td>
-             <td>{{ vino_espumante.varietal }}</td>
-             <td>{{ vino_espumante.cosecha }}</td>
+             <td>{{ rosado.id }}</td>
+             <td>{{ rosado.varietal }}</td>
+             <td>{{ rosado.cosecha }}</td>
              <td>
                     <a
-                    href="{% url 'update_vino_espumante' vino_espumante.id %}"
+                    href="#"
                     class="btn btn-primary"
                     style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
                     ><i class="fa fa-wine-glass fa-lg" title="New Record"> </i>
                     </a>
                     <a
           
-                   href="% url 'delete_vino_espumante' vino_espumante.id %}"
+                   href="#"
                    class="btn btn-danger"
                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
                    ><i class="fa fa-trash fa-sm" title="Delete Record"></i>
